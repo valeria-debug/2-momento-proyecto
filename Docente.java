@@ -6,6 +6,15 @@ public class Docente extends Persona implements Trabajador {
         this.salarioBase = salarioBase;
     }
 
+   
+    public double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public void setSalarioBase(double salarioBase) {
+        this.salarioBase = salarioBase;
+    }
+
     @Override
     public void mostrarInfo() {
         System.out.println("Docente: " + nombre + " - Cédula: " + cedula);
@@ -19,5 +28,10 @@ public class Docente extends Persona implements Trabajador {
     @Override
     public void descansar() {
         System.out.println(nombre + " está descansando.");
+    }
+
+ 
+    public double calcularSalario() {
+        return salarioBase;
     }
 }
