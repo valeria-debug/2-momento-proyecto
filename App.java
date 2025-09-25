@@ -6,5 +6,9 @@ public class App {
         d1.trabajar();
         d1.mostrarCategoria();
         System.out.println("Salario: " + d1.calcularSalario());
+
+        d1.setBonificacion(600000);
+        System.out.println("Nueva bonificación: " + d1.getBonificacion());
+        System.out.println("Nuevo salario: " + d1.calcularSalario());
     }
 }
