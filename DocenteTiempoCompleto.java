@@ -6,6 +6,15 @@ public class DocenteTiempoCompleto extends Docente {
         this.bonificacion = bonificacion;
     }
 
+  
+    public double getBonificacion() {
+        return bonificacion;
+    }
+
+    public void setBonificacion(double bonificacion) {
+        this.bonificacion = bonificacion;
+    }
+
     @Override
     public double calcularSalario() {
         return salarioBase + bonificacion;
